@@ -1,13 +1,23 @@
-import { Mdx } from '@/components/Mdx';
-import { allPosts } from 'contentLayer/generated';
-export default function Home() {
-  const posts = allPosts.map((post) => post);
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h2>Hello World</h2>
-      <div dangerouslySetInnerHTML={{ __html: posts[0]?.title }} />
+import { PostCard } from '@/components/PostCard';
+import { allPosts } from '../../.contentlayer/generated';
+import { Grid } from '@/components/Grid';
+import { Profile } from '@/components/Profile';
+import { siteConfig } from '@/config';
 
-      <Mdx code={posts[0].body.code} />
+export default function Home() {
+  const posts = allPosts;
+  return (
+    <main className="">
+      <div className="my-6">
+        <Profile items={siteConfig} />
+      </div>
+      <div>
+        <Grid sm={1} md={2} lg={3} gap={10}>
+          {posts.map((post) => (
+            <PostCard key={post._id} />
+          ))}
+        </Grid>
+      </div>
     </main>
   );
 }

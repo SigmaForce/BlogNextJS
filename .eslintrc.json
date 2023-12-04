@@ -21,12 +21,36 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["@typescript-eslint", "react", "react-hooks"],
+  "plugins": ["react", "@typescript-eslint", "react-hooks", "import-helpers"],
   "rules": {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
+    "import-helper/order-imports": [
+      "off",
+      {
+        "newlinesBetween": "always",
+        "groups": [
+          ["/^react/", "/^next/"],
+          "/^contentlayer/",
+          "module",
+          "/^@shared/",
+          "absolute",
+          "/^@/components/",
+          "/^@/pages/",
+          "/utils/",
+          "/^@/models/",
+          "/^@/store/",
+          "/^@/lib/",
+          "/^@/styles/",
+          "/^@/templates/",
+          ["parent", "sibling", "index"]
+        ],
+        "alphabetize": { "order": "asc", "ignoreCase": true }
+      }
+
+    ],
     "prettier/prettier": [
       "error",
       {
