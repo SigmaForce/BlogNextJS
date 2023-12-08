@@ -5,6 +5,7 @@ import { Header } from '@/components/Header';
 import { Layout } from '@/components/Layout';
 import { MainNav } from '@/components/MainNav';
 import { mainNavConfig } from '@/config';
+import { Footer } from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -20,11 +21,14 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-primary text-gray-100">
         <Header>
-          <MainNav items={mainNavConfig} />
+          <MainNav items={mainNavConfig.mainNav} />
         </Header>
-        <div className="pt-20">
-          <Layout>{children} </Layout>
-        </div>
+
+        <Layout>
+          <div className="pt-20">{children} </div>
+        </Layout>
+
+        <Footer items={mainNavConfig.mainNav} />
       </body>
     </html>
   );
