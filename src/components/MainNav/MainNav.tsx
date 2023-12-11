@@ -5,6 +5,7 @@ import { NavItem } from '@/models';
 import Link from 'next/link';
 import { ToggleButton } from './components';
 import { useMainNav } from './hooks';
+import { List, ListItem } from '@/components/List';
 
 type MainNavProps = {
   items: NavItem[];
@@ -15,13 +16,13 @@ export const MainNav = ({ items }: MainNavProps) => {
   return (
     <>
       <S.Nav className="">
-        <S.List>
+        <List>
           {items.map((item) => (
-            <S.ListItem key={item.title}>
+            <ListItem key={item.title}>
               <Link href={item.href}>{item.title}</Link>
-            </S.ListItem>
+            </ListItem>
           ))}
-        </S.List>
+        </List>
       </S.Nav>
 
       <S.Content>

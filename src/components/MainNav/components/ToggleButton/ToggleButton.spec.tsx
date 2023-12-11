@@ -1,7 +1,6 @@
-import '@testing-library/jest-dom';
 import { act, fireEvent, render, screen } from '@testing-library/react';
 import { ToggleButton } from './ToggleButton';
-
+import '@testing-library/jest-dom';
 const handleToggleMenu = jest.fn();
 afterEach(() => {
   jest.clearAllMocks();

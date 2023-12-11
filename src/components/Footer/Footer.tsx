@@ -1,10 +1,12 @@
 import React from 'react';
 import { Layout } from '@/components/Layout';
 import { Logo } from '../Logo';
-import { siteConfig } from '@/config';
+import { siteConfig, socialLinkConfig } from '@/config';
 import { NavItem } from '@/models';
 import Link from 'next/link';
 import * as S from './styles';
+import { List, ListItem } from '@/components/List';
+import { SocialMedia } from '../SocialMedia';
 
 type FooterProps = {
   items: NavItem[];
@@ -23,17 +25,18 @@ export const Footer = ({ items }: FooterProps) => {
 
           <S.Section role="contentinfo">
             <S.Title>Redes</S.Title>
+            <SocialMedia items={socialLinkConfig.mainNav} />
           </S.Section>
           <S.Section>
             <S.Title>Sitemap</S.Title>
-            <ul>
+            <List className="flex-col">
               {items.map((item) => (
-                <li key={item.href}>
+                <ListItem key={item.href}>
                   {' '}
                   <Link href={item.href}>{item.title}</Link>
-                </li>
+                </ListItem>
               ))}
-            </ul>
+            </List>
           </S.Section>
         </S.Content>
         <S.CopyrightContainer className="">

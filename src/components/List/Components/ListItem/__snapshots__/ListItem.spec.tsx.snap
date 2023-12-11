@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ListItem/> should render a ListItem 1`] = `
+<div>
+  <li
+    class="text-medium relative px-2 font-light transition-colors duration-300 hover:text-link"
+  >
+    children
+  </li>
+</div>
+`;
