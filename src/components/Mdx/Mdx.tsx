@@ -3,6 +3,7 @@ import { useMDXComponent } from 'next-contentlayer/hooks';
 import '@/styles/mdx.css';
 
 import React from 'react';
+import { Grid } from '../Grid';
 
 const components: MDXComponents = {
   h1: ({ className = '', children, ...props }) => (
@@ -19,7 +20,10 @@ const components: MDXComponents = {
     </pre>
   ),
   code: ({ className = '', children, ...props }) => (
-    <code className={`text-md relative  rounded-lg  ${className}`} {...props}>
+    <code
+      className={`text-md relative rounded bg-gray-700 px-[0.4rem] py-[0.1rem] font-mono leading-tight text-gray-50  ${className}`}
+      {...props}
+    >
       {children}
     </code>
   )
@@ -32,8 +36,8 @@ type MdxProps = {
 export const Mdx = ({ code = '' }: MdxProps) => {
   const Component = useMDXComponent(code);
   return (
-    <div>
+    <Grid sm={1} md={1} lg={1} gap={10}>
       <Component components={components} />
-    </div>
+    </Grid>
   );
 };

@@ -1,5 +1,5 @@
 import { LinkedinIcon, InstagramIcon, GithubIcon } from '@/components/Icons';
-import { MainNavType } from '@/models';
+import { MainNavType } from '@/models/Index';
 
 export const socialLinkConfig: MainNavType = {
   mainNav: [

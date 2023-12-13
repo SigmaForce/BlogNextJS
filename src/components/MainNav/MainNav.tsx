@@ -1,7 +1,7 @@
 'use client';
 
 import * as S from './styles';
-import { NavItem } from '@/models';
+import { NavItem } from '@/models/Index';
 import Link from 'next/link';
 import { ToggleButton } from './components';
 import { useMainNav } from './hooks';

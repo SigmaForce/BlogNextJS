@@ -1,5 +1,5 @@
 'use client';
-import { Site } from '@/models';
+import { Site } from '@/models/Index';
 import React from 'react';
 import * as S from './styles';
 
