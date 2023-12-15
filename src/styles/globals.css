@@ -15,3 +15,7 @@
     background-color: #E1E5EE;
     border-radius: 8px;
 }
+
+pre::-webkit-scrollbar{
+    height: 6px;
+}
