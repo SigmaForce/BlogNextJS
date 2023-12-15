@@ -6,6 +6,7 @@ import { Layout } from '@/components/Layout';
 import { MainNav } from '@/components/MainNav';
 import { mainNavConfig } from '@/config';
 import { Footer } from '@/components/Footer';
+import { BackToTop } from '@/components/BackToTop';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -18,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className="bg-primary text-gray-100">
         <Header>
           <MainNav items={mainNavConfig.mainNav} />
@@ -27,7 +28,7 @@ export default function RootLayout({
         <Layout>
           <div className="py-20">{children} </div>
         </Layout>
-
+        <BackToTop />
         <Footer items={mainNavConfig.mainNav} />
       </body>
     </html>

@@ -7,5 +7,6 @@ export {
   InstagramLogo as InstagramIcon,
   GithubLogo as GithubIcon,
   TwitterLogo as TwitterIcon,
-  ArrowLeft as ArrowLeftIcon
+  ArrowLeft as ArrowLeftIcon,
+  ArrowUp as ArrowUpIcon
 } from '@phosphor-icons/react';
