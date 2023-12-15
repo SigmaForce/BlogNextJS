@@ -11,6 +11,58 @@ const components: MDXComponents = {
       {children}
     </h1>
   ),
+  h2: ({ className = '', children, ...props }) => (
+    <h2 className={`text-3xl font-bold ${className}`} {...props}>
+      {children}
+    </h2>
+  ),
+  h3: ({ className = '', children, ...props }) => (
+    <h3 className={`text-2xl font-bold ${className}`} {...props}>
+      {children}
+    </h3>
+  ),
+  h4: ({ className = '', children, ...props }) => (
+    <h4 className={`text-xl font-bold ${className}`} {...props}>
+      {children}
+    </h4>
+  ),
+  h5: ({ className = '', children, ...props }) => (
+    <h5 className={`text-lg font-bold ${className}`} {...props}>
+      {children}
+    </h5>
+  ),
+  h6: ({ className = '', children, ...props }) => (
+    <h6 className={`text-base font-bold ${className}`} {...props}>
+      {children}
+    </h6>
+  ),
+  a: ({ className = '', children, ...props }) => (
+    <a
+      className={`font-medium text-link underline-offset-4 ${className}`}
+      {...props}
+    >
+      {children}
+    </a>
+  ),
+
+  p: ({ className = '', children, ...props }) => (
+    <p
+      className={`mb-4 text-xl leading-7 text-slate-300 ${className}`}
+      {...props}
+    >
+      {children}
+    </p>
+  ),
+
+  blockquote: ({ className = '', children, ...props }) => (
+    <blockquote
+      className={`mb-4 mt-6 border-l-2 border-slate-50 pl-6 font-normal italic text-gray-200 ${className}`}
+      {...props}
+    >
+      {children}
+    </blockquote>
+  ),
+
   pre: ({ className = '', children, ...props }) => (
     <pre
       className={`text-md mb-4 mt-6 overflow-x-auto rounded-lg py-4  ${className}`}
