@@ -9,8 +9,6 @@ export const useBackToTop = () => {
       setShow(false);
       return;
     }
-    console.log(window.scrollY > lastScrollVertical);
-    console.log(window.scrollY, lastScrollVertical);
     if (window.scrollY > lastScrollVertical) {
       setShow(false);
     } else {

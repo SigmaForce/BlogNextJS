@@ -1,19 +1,23 @@
-import { Profile } from '@/components/Profile';
-import { siteConfig } from '@/config';
-import { PostService } from '@/services';
 import { Pagination } from '@/components/Pagination';
 import { PostsList } from '@/components/PostsList';
 import { paginationPages } from '@/functions';
+import { PostService } from '@/services';
 
-export default function Home() {
-  const { posts, currentPage, numbPages } = PostService.getAll();
+export default function Page({ params }: { params: { page: string } }) {
+  const currentPage = +params.page;
+  const { posts, numbPages } = PostService.getAll({ currentPage });
   const { prevPage, nextPage } = paginationPages(currentPage);
-  console.log(prevPage, nextPage);
-  return (
-    <main>
-      <div className="my-6">
-        <Profile items={siteConfig} />
+
+  if (!posts.length) {
+    return (
+      <div>
+        <h2>Não Há Posts!</h2>
       </div>
+    );
+  }
+
+  return (
+    <>
       <PostsList posts={posts} />
 
       <Pagination
@@ -22,6 +26,6 @@ export default function Home() {
         prevPage={prevPage}
         nextPage={nextPage}
       />
-    </main>
+    </>
   );
 }
