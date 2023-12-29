@@ -1,3 +1,4 @@
+import { notFound } from 'next/navigation';
 import { Post } from '@/components/Post';
 import { PostService } from '@/services';
 
@@ -5,10 +6,8 @@ export default function PostPage({ params }: { params: { slug: string } }) {
   const { post } = PostService.getBySlug(params.slug);
 
   if (!post) {
-    return null;
+    notFound();
   }
-
-  //TODO: checar se o post existe
 
   return (
     <div>
