@@ -1,6 +1,32 @@
 import React from 'react';
+import { siteConfig } from '@/config';
 import * as S from './styles';
 import { Link } from '@/components/Link';
+
+export const metadata = {
+  title: 'Sobre Mim',
+  description: 'Conheça um pouco mais sobre mim',
+  metadataBase: new URL(siteConfig.url),
+  openGraph: {
+    type: 'website',
+    title: 'Sobre Mim',
+    url: '/about',
+    description: 'Conheça um pouco mais sobre mim',
+    siteName: 'Sobre Mim',
+    images: [
+      {
+        url: `${siteConfig.url}/assets/images/download.png`
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Sobre Mim',
+    description: 'Conheça um pouco mais sobre mim',
+    images: [`${siteConfig.url}/assets/images/download.png`]
+  },
+  robots: 'all'
+};
 
 export default function About() {
   return (
