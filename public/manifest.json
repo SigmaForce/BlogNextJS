@@ -1,0 +1,22 @@
+{
+    "name": "Blog Leonardo Lucas",
+    "short_name": "Blog",
+    "description": "Blog PWA",
+    "icons": [
+        {
+          "src": "/assets/images/download.png",
+          "type": "image/png",
+          "sizes": "192x192"
+        },
+        {
+          "src": "/assets/images/download.png",
+          "type": "image/png",
+          "sizes": "512x512"
+        }
+      ],
+    "theme_color": "#201f27",
+    "background_color": "#201f27",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/"
+  }
