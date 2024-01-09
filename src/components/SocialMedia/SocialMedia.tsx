@@ -1,7 +1,7 @@
 import React from 'react';
 import * as S from './styles';
 
-import { NavItem } from '@/models';
+import { NavItem } from '@/models/index';
 import { List, ListItem } from '@/components/List';
 
 type SocialMediaProps = {
