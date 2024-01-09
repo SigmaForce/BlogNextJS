@@ -1,5 +1,5 @@
 backend:
-  node: github
+  name: github
   branch: master
   repo: SigmaForce/BlogNextJS
   base_url: https://blog-next-js-omega-nine.vercel.app/
