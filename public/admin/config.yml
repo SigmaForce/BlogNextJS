@@ -1,8 +1,8 @@
 backend:
   node: github
-  branch: main
-  repo: https://github.com/SigmaForce/BlogNextJS.git
-  base_url: ''
+  branch: master
+  repo: SigmaForce/BlogNextJS
+  base_url: https://blog-next-js-omega-nine.vercel.app/
   auth_endpoint: api/auth/
 
 media_folder: public/assets/images
