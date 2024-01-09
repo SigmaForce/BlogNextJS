@@ -1,4 +1,4 @@
-import { MainNavType } from '@/models/Index';
+import { MainNavType } from '@/models/index';
 
 export const mainNavConfig: MainNavType = {
   mainNav: [

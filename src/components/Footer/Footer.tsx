@@ -2,7 +2,7 @@ import React from 'react';
 import { Layout } from '@/components/Layout';
 import { Logo } from '../Logo';
 import { siteConfig, socialLinkConfig } from '@/config';
-import { NavItem } from '@/models/Index';
+import { NavItem } from '@/models/index';
 import Link from 'next/link';
 import * as S from './styles';
 import { List, ListItem } from '@/components/List';
