@@ -18,6 +18,6 @@ export const formatPosts = (posts: Post[]) => {
   });
 
   return formattedPosts.sort((a, b) =>
-    a.frontmatter.date > b.frontmatter.date ? 1 : -1
+    a.frontmatter.date < b.frontmatter.date ? 1 : -1
   );
 };

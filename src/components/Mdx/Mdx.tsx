@@ -8,32 +8,32 @@ import { Pre } from '@/components/Mdx/components';
 
 const components: MDXComponents = {
   h1: ({ className = '', children, ...props }) => (
-    <h1 className={`text-4xl font-bold ${className}`} {...props}>
+    <h1 className={`mt-12 text-4xl font-bold ${className}`} {...props}>
       {children}
     </h1>
   ),
   h2: ({ className = '', children, ...props }) => (
-    <h2 className={`text-3xl font-bold ${className}`} {...props}>
+    <h2 className={`mb-6 mt-14 text-3xl font-bold ${className}`} {...props}>
       {children}
     </h2>
   ),
   h3: ({ className = '', children, ...props }) => (
-    <h3 className={`text-2xl font-bold ${className}`} {...props}>
+    <h3 className={`mb-4 mt-8 text-2xl font-bold ${className}`} {...props}>
       {children}
     </h3>
   ),
   h4: ({ className = '', children, ...props }) => (
-    <h4 className={`text-xl font-bold ${className}`} {...props}>
+    <h4 className={`mb-4 mt-8 text-xl font-bold ${className}`} {...props}>
       {children}
     </h4>
   ),
   h5: ({ className = '', children, ...props }) => (
-    <h5 className={`text-lg font-bold ${className}`} {...props}>
+    <h5 className={`mb-4 mt-8 text-lg font-bold ${className}`} {...props}>
       {children}
     </h5>
   ),
   h6: ({ className = '', children, ...props }) => (
-    <h6 className={`text-base font-bold ${className}`} {...props}>
+    <h6 className={`mb-4 mt-8 text-base font-bold ${className}`} {...props}>
       {children}
     </h6>
   ),
