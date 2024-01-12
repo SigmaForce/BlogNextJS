@@ -18,6 +18,10 @@ const config: Config = {
     {
       pattern: /^text-/,
       variants: ['xs', 'sm', 'md', 'lg', 'xl', 'xxl']
+    },
+    {
+      pattern: /^bg-/,
+      variants: ['blue', 'red', 'green']
     }
   ],
   theme: {

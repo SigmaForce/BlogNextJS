@@ -4,7 +4,7 @@ import '@/styles/mdx.css';
 
 import React from 'react';
 import { Grid } from '../Grid';
-import { Pre } from '@/components/Mdx/components';
+import { Pre, Note } from '@/components/Mdx/components';
 
 const components: MDXComponents = {
   h1: ({ className = '', children, ...props }) => (
@@ -76,7 +76,8 @@ const components: MDXComponents = {
     >
       {children}
     </code>
-  )
+  ),
+  Note
 };
 
 type MdxProps = {

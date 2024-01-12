@@ -10,7 +10,7 @@ export const Header = ({ children }: HeaderProps) => {
   return (
     <S.Container>
       <S.Content>
-        <Logo />
+        <Logo width={196} />
         {children}
       </S.Content>
     </S.Container>

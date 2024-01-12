@@ -19,7 +19,7 @@ export const Footer = ({ items }: FooterProps) => {
       <S.Container>
         <S.Content className="">
           <S.Section role="contentinfo">
-            <Logo />
+            <Logo width={256} />
             <S.Title className="text-bold text-xl ">{siteConfig.title}</S.Title>
           </S.Section>
 
@@ -41,7 +41,7 @@ export const Footer = ({ items }: FooterProps) => {
         </S.Content>
         <S.CopyrightContainer className="">
           <S.Copyright className="mb-2 max-w-[18rem] text-center text-gray-500 sm:max-w-fit ">
-            Todos os direitos reseverdos © Junior Alves {fullYear}
+            Todos os direitos reseverdos © Leonardo Lucas {fullYear}
           </S.Copyright>
         </S.CopyrightContainer>
       </S.Container>

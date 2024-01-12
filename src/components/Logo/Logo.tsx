@@ -1,10 +1,21 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-export const Logo = () => {
+type LogoProps = {
+  width?: number;
+  height?: number;
+};
+
+export const Logo = ({ width = 144, height = 24 }: LogoProps) => {
   return (
     <Link href="/">
-      <h2 className="text-2xl font-bold text-link">Logo</h2>
+      <Image
+        src="/assets/images/Logo.svg"
+        alt="Logo"
+        width={width}
+        height={height}
+      />
     </Link>
   );
 };

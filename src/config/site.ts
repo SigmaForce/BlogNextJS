@@ -2,7 +2,7 @@ import { Site } from '@/models/index';
 
 export const siteConfig: Site = {
   name: 'Leonardo Lucas',
-  title: 'Pleno Frontend Developer',
+  title: 'Frontend Developer',
   description: 'Blog Para compartilhar conhecimento',
   subtitle:
     'Bem Vindo ao meu blog! Eu sou o Leonardo Lucas, Sempre buscando aprendernovas tecnologias e aprimorar meus conhecimentos.',
