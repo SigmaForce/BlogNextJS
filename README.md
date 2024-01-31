@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![Logo do projeto](public/assets/images/cover.png)
 
-## Getting Started
+# Blog
 
-First, run the development server:
+Bem-vindo ao Blog! Este projeto é o resultado da aplicação prática de conhecimentos em programação, seguindo as melhores práticas, clean code, princípios SOLID (Inversão de Dependências) e testes. Além disso, o blog servirá como plataforma para a publicação de artigos sobre programação e outras áreas de interesse do autor.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🔥 Introdução
+
+Este blog é um espaço dedicado ao compartilhamento de conhecimento e experiências. Nele, você encontrará uma variedade de artigos sobre temas relacionados ao desenvolvimento de software, tecnologia, e muito mais.
+
+### ⚙️ Pré-requisitos
+
+Antes de começar, certifique-se de ter o [NodeJS](https://nodejs.org/en/download) instalado em sua Máquina.
+
+### 🔨 Guia de instalação
+
+1. Clone este repositório:
+
+```
+https://github.com/SigmaForce/BlogNextJS.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Acesse o diretório do projeto:
+```
+cd BlogNextJS
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Instale as dependências:
+```
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+4. Após a conclusão da instalação, inicie o servidor de desenvolvimento:
+```
+npm run dev
+```
 
-## Learn More
+Acesse o blog em seu navegador em http://localhost:3000.
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Executando os testes (caso tenha testes)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Explique como executar os testes automatizados para este sistema.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
+Coloque exemplos
+```
 
-## Deploy on Vercel
+## 📦 Tecnologias usadas:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Nesse Projeto Utilizei as seguintes Tecnologias
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**Front-end:**
+* [Typescript](https://react.dev/) - O TypeScript está integrado para proporcionar um código mais seguro e manutenível, prevenindo erros comuns durante o desenvolvimento.
+* [TailwindCSS](https://tailwindcss.com/) - O Tailwind CSS permite a personalização completa da aparência do blog com facilidade, garantindo uma experiência única.
+* [NextJS] -  Utilizando NextJS, você pode aproveitar o poder do React para um desenvolvimento rápido e eficiente.
+* [Jest](https://jestjs.io/pt-BR/) e [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) - Jest e React Testing Library são incorporados para garantir a qualidade e robustez do código, facilitando a identificação e correção de problemas.
+* [Contentlayer] - O ContentLayer é empregado para facilitar a gestão de conteúdo, tornando a atualização do blog mais intuitiva e flexível.
+## 👷 Autores
+* **Leonardo Lucas** - *Desenvolvedor* - [Leonardo Lucas](https://gist.github.com/SigmaForce)

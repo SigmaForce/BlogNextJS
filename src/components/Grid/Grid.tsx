@@ -30,7 +30,9 @@ export const Grid = ({
 
   return (
     <>
-      <div className={`grid w-full grid-cols-${cols} gap-${gap} ${responsive}`}>
+      <div
+        className={`mx-auto grid w-full grid-cols-${cols} gap-${gap} ${responsive}`}
+      >
         {children}
       </div>
     </>
