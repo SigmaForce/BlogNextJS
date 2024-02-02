@@ -37,12 +37,12 @@ npm run dev
 
 Acesse o blog em seu navegador em http://localhost:3000.
 
-## 🛠️ Executando os testes (caso tenha testes)
+## 🛠️ Executando os testes
 
-Explique como executar os testes automatizados para este sistema.
+Para rodar os testes você deve utilizar o seguinte comando
 
 ```
-Coloque exemplos
+npm run test 
 ```
 
 ## 📦 Tecnologias usadas:
@@ -50,10 +50,10 @@ Coloque exemplos
 Nesse Projeto Utilizei as seguintes Tecnologias
 
 **Front-end:**
-* [Typescript](https://react.dev/) - O TypeScript está integrado para proporcionar um código mais seguro e manutenível, prevenindo erros comuns durante o desenvolvimento.
+* [Typescript](https://www.typescriptlang.org/) - O TypeScript está integrado para proporcionar um código mais seguro e manutenível, prevenindo erros comuns durante o desenvolvimento.
 * [TailwindCSS](https://tailwindcss.com/) - O Tailwind CSS permite a personalização completa da aparência do blog com facilidade, garantindo uma experiência única.
-* [NextJS] -  Utilizando NextJS, você pode aproveitar o poder do React para um desenvolvimento rápido e eficiente.
+* [NextJS](https://nextjs.org/) -  Utilizando NextJS, você pode aproveitar o poder do React para um desenvolvimento rápido e eficiente.
 * [Jest](https://jestjs.io/pt-BR/) e [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) - Jest e React Testing Library são incorporados para garantir a qualidade e robustez do código, facilitando a identificação e correção de problemas.
-* [Contentlayer] - O ContentLayer é empregado para facilitar a gestão de conteúdo, tornando a atualização do blog mais intuitiva e flexível.
+* [Contentlayer](https://contentlayer.dev/) - O ContentLayer é empregado para facilitar a gestão de conteúdo, tornando a atualização do blog mais intuitiva e flexível.
 ## 👷 Autores
 * **Leonardo Lucas** - *Desenvolvedor* - [Leonardo Lucas](https://gist.github.com/SigmaForce)
